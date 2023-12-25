@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vize Final</title>
+</head>
+
+<body>
+    <button onclick="not()">Vize/Final</button>
+    <p id="sonuc"></p>
+
+    <script>
+        function not() {
+            let sonuc = prompt("Notu Giriniz", "");
+                if (sonuc > 100 || sonuc < 0) {
+                    document.getElementById("sonuc").innerHTML="Geçerli not giriniz!";
+                } else if (sonuc >= 60) {
+                    document.getElementById("sonuc").innerHTML="Geçtiniz!";
+                } else {
+                    document.getElementById("sonuc").innerHTML="Kaldınız!";
+                
+            }
+        }
+
+    </script>
+</body>
+
+</html>
